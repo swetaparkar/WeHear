@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.PracticalTask" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+    <style name="Theme.PracticalTask" parent="Base.Theme.PracticalTask" />
+</resources>

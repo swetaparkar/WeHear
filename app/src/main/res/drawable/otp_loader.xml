@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360">
+
+    <shape
+        android:shape="ring"
+        android:useLevel="false">
+
+        <solid android:color="@color/red" /> <!-- Replace @color/loader_color with the desired color for the loader -->
+        <size
+            android:width="@dimen/_40ssp"
+            android:height="@dimen/_40ssp" />
+        <stroke
+            android:width="@dimen/_60ssp"
+            android:color="@color/red" />
+    </shape>
+</rotate>

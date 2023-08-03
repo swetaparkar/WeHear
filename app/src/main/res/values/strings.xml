@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PracticalTask</string>
+    <string name="log_in">Login</string>
+    <string name="contact_list">Contact List</string>
+    <string name="we_hear_innovation">WeHear Innovation</string>
+    <string name="phone_number">  Phone Number</string>
+    <string name="send_code">Send Code</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="submit">Submit</string>
+    <string name="auto_fetching_otp">Auto Fetching OTP</string>
+    <string name="search_contact">search_contact</string>
+    <string name="resend_code"><u>Resend Code</u></string>
+</resources>

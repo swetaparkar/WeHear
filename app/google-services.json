@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "751772658223",
+    "project_id": "practicaltask-faf09",
+    "storage_bucket": "practicaltask-faf09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751772658223:android:3a3eb793e8a13f0ca334da",
+        "android_client_info": {
+          "package_name": "com.example.practicaltask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751772658223-ge47hsmnm799e7hcmnrl64f46526215k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.practicaltask",
+            "certificate_hash": "7c87225bb372b9373c9f628ccc1e6e929b4dc822"
+          }
+        },
+        {
+          "client_id": "751772658223-h6luoshsd7s4qimc1hmf3mgdidrio1ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQRoLTvl17GDFMdAXCtZOBfThIetwDWtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751772658223-h6luoshsd7s4qimc1hmf3mgdidrio1ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

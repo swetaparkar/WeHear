@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OTPActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBar"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:layout_marginBottom="@dimen/_16ssp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16ssp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/verify_otp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_26ssp" />
+
+        <RelativeLayout
+            android:id="@+id/llOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOTP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30ssp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etOne"
+                style="@style/OtpEditText"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:background="@drawable/dr_gray_bg" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etTwo"
+                style="@style/OtpEditText"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_marginStart="@dimen/_16ssp"
+                android:layout_toRightOf="@+id/etOne"
+                android:background="@drawable/dr_gray_bg" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etThree"
+                style="@style/OtpEditText"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_marginStart="@dimen/_16ssp"
+                android:layout_toRightOf="@+id/etTwo"
+                android:background="@drawable/dr_gray_bg" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFour"
+                style="@style/OtpEditText"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_marginStart="@dimen/_16ssp"
+                android:layout_toRightOf="@+id/etThree"
+                android:background="@drawable/dr_gray_bg" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFive"
+                style="@style/OtpEditText"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_marginStart="@dimen/_16ssp"
+                android:layout_toRightOf="@+id/etFour"
+                android:background="@drawable/dr_gray_bg" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSix"
+                style="@style/OtpEditText"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_marginStart="@dimen/_16ssp"
+                android:layout_toRightOf="@+id/etFive"
+                android:background="@drawable/dr_gray_bg" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/otpLoader"
+            android:layout_width="@dimen/_25ssp"
+            android:layout_height="@dimen/_25ssp"
+            android:layout_below="@id/llOtp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_19ssp"
+            android:src="@drawable/otp_loader"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtAutoFetchingOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llOtp"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_19ssp"
+            android:layout_toRightOf="@+id/otpLoader"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/auto_fetching_otp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            style="@style/ButtonLightRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAutoFetchingOtp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:text="@string/submit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_16ssp"
+            android:layout_marginTop="@dimen/_19ssp"
+            android:layout_marginEnd="@dimen/_16ssp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/resend_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/otpProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/gray"
+        android:visibility="gone" />
+
+</RelativeLayout>
